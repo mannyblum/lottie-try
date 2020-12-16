@@ -23,7 +23,6 @@ class App extends React.Component {
       isPlaying: true,
       autoPlay: true,
     }
-
   }
   componentDidMount() {
     // call the loadAnimation to start the animation
