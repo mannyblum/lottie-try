@@ -99,6 +99,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1>Lottie</h1>
         <div className="toolbar">
           {this.state.isPlaying &&
             <PauseCircleTwoTone onClick={this.handleStop} />
