@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
 import lottie from 'lottie-web';
-import lottieApi from 'lottie-api';
+// import lottieApi from 'lottie-api';
 import animationData from './lottie/man.json';
+// import animationData from './lottie/car.json';
+// import animationData from './lottie/abby.json';
 
 import { SyncOutlined, PauseCircleTwoTone, PlayCircleTwoTone } from '@ant-design/icons';
 
@@ -11,7 +13,7 @@ import { Slider } from 'antd';
 import 'antd/dist/antd.css';
 
 let animObj = null;
-let animAPI;
+// let animAPI;
 
 class App extends React.Component {
   constructor(props) {
@@ -34,7 +36,7 @@ class App extends React.Component {
       animationData: animationData
     });
 
-    animAPI = lottieApi.createAnimationApi(animObj);
+    // animAPI = lottieApi.createAnimationApi(animObj);
 
     animObj.addEventListener('enterFrame', (event) => {
       this.setState({
@@ -93,7 +95,7 @@ class App extends React.Component {
   
   handleAutoPlayToggle = () => {
     this.setState({ autoPlay: !this.state.autoPlay }, () => {
-    })
+    });
   }
 
   render() {
